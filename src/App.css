@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tenzies{
+    margin: 30px auto;
+    background: cadetblue;
+    width: 900px;
+    height: 900px;
+    padding: 69px 75px;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.borders{
+    background: #0B2434;
+    width: 97%;
+    height:97%;
+    margin: 0 auto;
+    border: none;
+    padding: 50px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-board{
+    width: 97%;
+    height: 97%;
+    background: #F5F5F5;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px ;
 }
+
+.game-palette{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    font-size: 2rem; 
+    margin: 0 30px;
+    
+}
+.game-palette > button{
+    position: absolute;
+    margin: 0 auto;
+    top: 600px;
+    place-self: center;
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    background: #5035FF;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+}
+.description{
+    position: absolute;
+    top: 140px;
+    place-self: center;
+}
+
+.description h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.description p{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.game{
+    padding: 40px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:   inset 0px 8px 8px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
